@@ -2,6 +2,7 @@
 <resources>
 
     <declare-styleable name="StickyListHeadersListView">
+
         <!-- Android attributes -->
         <attr name="android:clipToPadding" />
         <attr name="android:padding" />
@@ -26,6 +27,21 @@
         <!-- StickyListHeaders attributes -->
         <attr name="hasStickyHeaders" format="boolean" />
         <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="indicatorColor" format="color" />
+        <attr name="underlineColor" format="color" />
+        <attr name="dividerColor" format="color" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="dividerPaddinglibrary" format="dimension" />
+        <attr name="tabPaddingLeftRight" format="dimension" />
+        <attr name="scrollOffset" format="dimension" />
+        <attr name="tabBackground" format="reference" />
+        <attr name="shouldExpand" format="boolean" />
+        <attr name="textAllCapslibrary" format="boolean" />
     </declare-styleable>
 
 </resources>
