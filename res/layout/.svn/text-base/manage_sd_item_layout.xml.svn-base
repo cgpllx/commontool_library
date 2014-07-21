@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="afterDescendants" >
+
+    <LinearLayout
+        android:id="@+id/section_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/gray"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingLeft="10.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/group_list_item_text"
+            style="@style/TextView.Font16AndBlack"
+            android:layout_width="0.0dip"
+            android:layout_height="26.399994dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:id="@+id/tag_right_check_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/select_all_txt"
+                style="@style/TextView.Font16AndBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/select_all" />
+
+            <ImageView
+                android:id="@+id/tag_check_app_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="20.0dip"
+                android:clickable="false"
+                android:contentDescription="@string/imageview_content_description"
+                android:descendantFocusability="afterDescendants"
+                android:focusable="false"
+                android:gravity="center"
+                android:src="@drawable/check_box_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_detail_id"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/Common.App.ListView.Item.Layout"
+            android:layout_width="fill_parent"
+            android:layout_height="70.0dip" >
+
+            <ImageView
+                android:id="@+id/im_app_icon"
+                style="@style/Common.App.ListView.Item.Icon"
+                android:layout_width="52.0dip"
+                android:layout_height="52.0dip"
+                android:contentDescription="@string/imageview_content_description"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toLeftOf="@id/adapter_home_res_download_layout"
+                android:layout_toRightOf="@id/im_app_icon"
+                android:fadingEdge="none"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="8.0dip" >
+
+                <TextView
+                    android:id="@+id/txt_app_name"
+                    style="@style/Manage.App.ListView.Item.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应用名称" />
+
+                <TextView
+                    android:id="@+id/txt_app_version"
+                    style="@style/TextView.Font12AndGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_market_version"
+                    android:drawablePadding="2.0dip"
+                    android:text="版本号" />
+
+                <TextView
+                    android:id="@+id/txt_app_size"
+                    style="@style/TextView.Font12AndGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/list_view_app_icon_size"
+                    android:drawablePadding="2.0dip"
+                    android:text="大小" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_right_check_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:visibility="visible" >
+
+                <CheckBox
+                    android:id="@+id/item_check_app_checked"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:contentDescription="@string/imageview_content_description"
+                    android:descendantFocusability="blocksDescendants"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:visibility="visible" />
+                <!-- android:src="@drawable/check_box_selector" -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/adapter_home_res_download_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <include layout="@layout/download_state_layout" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/space_id"
+        android:layout_width="fill_parent"
+        android:layout_height="73.0dip"
+        android:layout_below="@id/item_detail_id"
+        android:layout_marginTop="-8.0dip"
+        android:background="@drawable/quickaction_bg"
+        android:focusable="false" >
+
+        <LinearLayout
+            android:id="@+id/tracks"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="4.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="4.0dip" >
+
+            <Button
+                android:id="@+id/open_btn_id"
+                style="@style/TextView.Font16AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_gray_selector"
+                android:focusable="false"
+                android:text="@string/open"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/uninstall_btn_id"
+                style="@style/TextView.Font16AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_gray_selector"
+                android:focusable="false"
+                android:text="@string/uninstalled_app"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/tosd_btn_id"
+                style="@style/TextView.Font16AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_gray_selector"
+                android:focusable="false"
+                android:text="@string/manage_item_expand_tosd"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/install_btn_id"
+                style="@style/TextView.Font16AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_gray_selector"
+                android:focusable="false"
+                android:text="@string/ap_install_apk_text"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/del_btn_id"
+                style="@style/TextView.Font16AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_gray_selector"
+                android:focusable="false"
+                android:text="@string/delete"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

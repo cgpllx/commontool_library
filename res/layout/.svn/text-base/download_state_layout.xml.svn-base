@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/adapter_home_res_state_divider_iv"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginTop="8.0dip"
+        android:scaleType="matrix"
+        android:src="@color/list_view_item_vertical_divider_color" />
+
+    <LinearLayout
+        android:id="@+id/adapter_home_res_state_layout"
+        android:layout_width="59.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10.0dip"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/show_progress_bar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/adapter_home_res_state_iv"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_gravity="center"
+                android:src="@drawable/download_state_download" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/adapter_home_res_state_tv"
+            style="@style/Common.App.ListView.Item.State.TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智汇市场</string>
+    <string name="action_settings">Set</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="banner_nav_game">游戏</string>
+    <string name="banner_nav_app">应用</string>
+    <string name="banner_nav_read">专辑</string>
+    <string name="banner_nav_install">装机必备</string>
+    <string name="open">打开</string>
+    <string name="ignore_long_item">忽略</string>
+    <string name="ap_install_apk_text">安装</string>
+    <string name="manage_item_expand_tosd">移到SD卡</string>
+    <string name="uninstalled_app">卸载</string>
+    <string name="imageview_content_description" />
+    <string name="resource_detail">详情</string>
+    <string name="select_all">全选</string>
+    <string name="resource_evaluate">评分</string>
+    <string name="download_state_download">下载</string>
+    <string name="share_btn">分享</string>
+    <string name="report">举报</string>
+    <string name="ap_loading_on_progress">正在载入</string>
+    <string name="loading_on_progress">正在载入...</string>
+    <string name="resource_detail_safe_authentication">安全认证</string>
+    <string name="detail_txt_level">星级：</string>
+    <string name="delete">删除</string>
+    <string name="refresh">刷新</string>
+    <string name="catalog">目录</string>
+    <string name="manage_app_installed_sd_title">已扫描到（%1$d）个APK</string>
+    <string name="count_downloading">下载中（%1$d）</string>
+    <string name="count_installable">下载完（%1$d）</string>
+
+    <item name="dowmid" type="id"/>
+    <item name="webappinfo" type="id"/>
+    <item name="special" type="id"/>
+    <item name="delbut" type="id"/>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time1">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">上拉加载</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="search_btn">取消</string>
+    <string name="search">搜索</string>
+    <string name="search_input_hint">输入你想要的应用</string>
+    <string name="search_btn_inputing">搜索</string>
+    <string name="search_more">换一换</string>
+    <string name="install_must_download_with_one_button">一键安装</string>
+    <string name="select_quit">取消全选</string>
+    <string name="select_all">全选</string>
+    <string name="empty_message">No items yet</string>
+    <string name="loading_message">Please wait</string>
+    <string name="error_message">Oops! Something wrong happened</string>
+    <string name="empty_button">Try again</string>
+    <string name="loading_button">Cancel</string>
+    <string name="error_button">Try again</string>
+    <string name="more">更多</string>
+    <string name="update">更新</string>
+    <string name="upgrade">升级</string>
+    <string name="setting">设置</string>
+    <string name="feedback">反馈</string>
+    <string name="exit">退出</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_feedback">反馈</string>
+    <string name="menu_exit">退出</string>
+    <string name="aboutcontent">康佳集团成立于1980年5月21日，是中国大陆改革开放后的首家中外合资电子企业、华侨城集团公司旗下的唯一一家电子通讯生产公司。康佳集团总部位于深圳南山区华侨城，主要从事彩色电视机、手机、数码相机、生活电器、LED、机顶盒及相关产品的研发、制造和销售，兼及精密模具、注塑件、高频头、印制板、变压器及手机电池等配套业务，是世界知名、中国领先的电子信息企业。</string>
+    <string name="about">关于</string>
+    <string name="platform">章节</string>
+    <string name="share_to_friends">分享给朋友</string>
+    <string name="check_update">检查更新</string>
+    <string name="orginfo">发布者信息</string>
+    <string name="report">举报</string>
+    <string name="uu_detail_report">举报到12321</string>
+    <string name="version_library">版本库</string>
+    <string name="report_no_download">无法下载</string>
+    <string name="report_no_install">无法安装</string>
+    <string name="report_carry_virus">携带病毒</string>
+    <string name="report_content_error">内容有误</string>
+    <string name="report_harmful_mobile">对手机或数据有害</string>
+    <string name="report_version_update">版本需要更新</string>
+    <string name="report_other_problem">其他问题</string>
+    <string name="report_content">请填写举报内容，最多输入100字。</string>
+    <string name="report_malice_integral">恶意积分墙</string>
+    <string name="report_malice_notification">恶意通知栏</string>
+    <string name="report_privately_install">私自安装</string>
+    <string name="report_malice_deduction">恶意扣费</string>
+    <string name="report_garbage_message">垃圾短信</string>
+    <string name="tip_report">举报信息已提交,我们会尽快处理</string>
+    <string name="tip_feedback">反馈信息已提交,我们会尽快处理</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="feedback_phone">邮箱/QQ/手机：</string>
+    <string name="feedback_hint">您的需求和建议，我们用心聆听！</string>
+    <string name="feedback_content">最多可以输入140字</string>
+    <string name="feedback">反馈</string>
+    <string name="update_message">升级到最新版本</string>
+    <string name="is_the_new_version">已经是最新版本</string>
+    <string name="current_version">当前版本：%1$d</string>
+    <string name="have_new_version">新版本：%1$d</string>
+    <string name="cancel_label">取消</string>
+    <string name="confirm_label">确定</string>
+    <string name="selected_folder_label">Selected folder:</string>
+    <string name="create_folder_label">Create folder</string>
+    <string name="create_folder_msg">Create new folder with name "%1$s"?</string>
+    <string name="create_folder_success">Created new folder</string>
+    <string name="create_folder_error_no_write_access">Cannot write to this folder</string>
+    <string name="create_folder_error_already_exists">Folder already exists</string>
+    <string name="create_folder_error">Could not create folder</string>
+    <string name="up_label">Up</string>
+
+</resources>

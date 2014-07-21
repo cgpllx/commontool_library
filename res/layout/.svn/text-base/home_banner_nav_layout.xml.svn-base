@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/banner_nav_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="61.0dip"
+    android:focusable="false"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/gameButton"
+        style="@style/Home.Banner.Nav"
+        android:layout_width="fill_parent"
+        android:layout_height="61.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/banner_nav_game_bg_color"
+        android:drawableTop="@drawable/banner_nav_icon_game"
+        android:focusable="false"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip"
+        android:text="@string/banner_nav_game" />
+
+    <Button
+        android:id="@+id/appButton"
+        style="@style/Home.Banner.Nav"
+        android:layout_width="fill_parent"
+        android:layout_height="61.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/banner_nav_app_bg_color"
+        android:drawableTop="@drawable/banner_nav_icon_app"
+        android:focusable="false"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip"
+        android:text="@string/banner_nav_app" />
+
+    <Button
+        android:id="@+id/readButton"
+        style="@style/Home.Banner.Nav"
+        android:layout_width="fill_parent"
+        android:layout_height="61.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/banner_nav_read_bg_color"
+        android:drawableTop="@drawable/banner_nav_icon_read"
+        android:focusable="false"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip"
+        android:text="@string/banner_nav_read" />
+
+    <Button
+        android:id="@+id/installButton"
+        style="@style/Home.Banner.Nav"
+        android:layout_width="fill_parent"
+        android:layout_height="61.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/banner_nav_install_bg_color"
+        android:drawableTop="@drawable/banner_nav_icon_install"
+        android:focusable="false"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip"
+        android:text="@string/banner_nav_install" />
+
+</LinearLayout>

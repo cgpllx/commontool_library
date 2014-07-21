@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff999999" android:layout_gravity="center" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络未连接,请您先设置网络!,然后刷新尝试连接" android:drawableLeft="@drawable/ap_airpush" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="14.0dip" android:layout_gravity="center" android:id="@+id/ap_set_net_btn" android:background="@drawable/ap_error_btn_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:text="设置网络" android:layout_weight="1.0" />
+        <Button android:textSize="14.0dip" android:layout_gravity="center" android:id="@+id/ap_retry_btn" android:background="@drawable/ap_error_btn_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="30.0dip" android:text="重试" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout> 

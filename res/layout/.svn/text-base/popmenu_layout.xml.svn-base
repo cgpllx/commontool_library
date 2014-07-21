@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/menu_update"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/menu_click_selector"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/menu_update"
+            android:gravity="center"
+            android:text="@string/update"
+            android:textColor="@color/menu_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/menu_click_selector"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/menu_divider_color" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/menu_set"
+            android:gravity="center"
+            android:text="@string/menu_setting"
+            android:textColor="@color/menu_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_about"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/menu_click_selector"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/menu_divider_color" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/menu_about"
+            android:gravity="center"
+            android:text="@string/menu_about"
+            android:textColor="@color/menu_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/menu_click_selector"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/menu_divider_color" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/menu_feedback"
+            android:gravity="center"
+            android:text="@string/menu_feedback"
+            android:textColor="@color/menu_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/menu_click_selector"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/menu_divider_color" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/menu_exit"
+            android:gravity="center"
+            android:text="@string/menu_exit"
+            android:textColor="@color/menu_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

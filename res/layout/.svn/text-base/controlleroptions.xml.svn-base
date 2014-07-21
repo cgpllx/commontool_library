@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/space_id"
+    android:layout_width="fill_parent"
+    android:layout_height="73.0dip"
+    android:layout_marginTop="-8.0dip"
+    android:background="@drawable/quickaction_bg"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/tracks"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip" >
+
+        <Button
+            android:id="@+id/open_btn_id"
+            style="@style/TextView.Font12AndPressColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray_selector"
+            android:text="@string/open"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/uninstall_btn_id"
+            style="@style/TextView.Font12AndPressColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray_selector"
+            android:text="@string/uninstalled_app"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/tosd_btn_id"
+            style="@style/TextView.Font12AndPressColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray_selector"
+            android:text="@string/manage_item_expand_tosd"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/install_btn_id"
+            style="@style/TextView.Font12AndPressColor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/ap_install_apk_text"
+            android:background="@drawable/btn_gray_selector"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

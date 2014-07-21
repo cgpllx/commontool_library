@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <fragment -->
+    <!-- android:id="@+id/oneclassifylistfragment" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- class="com.konka.appdownload.fragment.classify.OtherFragment" -->
+    <!-- android:tag="oneclassifylistfragment" /> -->
+
+    <FrameLayout
+        android:id="@+id/oneclassifylistfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="oneclassifylistfragment" >
+    </FrameLayout>
+
+</LinearLayout>

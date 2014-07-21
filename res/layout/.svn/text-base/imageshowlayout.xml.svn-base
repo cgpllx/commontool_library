@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/resource_detail_srcoll_body"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/resource_detail_top_layout" /> -->
+
+    <ViewStub
+        android:id="@+id/resource_detail_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/resources_progress_overlay" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/gray"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/resource_detail_app_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/resource_info_layout" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:scrollbars="none"
+                android:spacing="10.0dip"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:id="@+id/imageshow"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+<!--                     <ImageView -->
+<!--                         android:layout_width="160dp" -->
+<!--                         android:layout_height="260dp" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:src="@drawable/a1" /> -->
+
+<!--                     <ImageView -->
+<!--                         android:layout_width="160dp" -->
+<!--                         android:layout_height="260dp" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:src="@drawable/a2" /> -->
+
+<!--                     <ImageView -->
+<!--                         android:layout_width="160dp" -->
+<!--                         android:layout_height="260dp" -->
+<!--                         android:src="@drawable/a3" /> -->
+
+<!--                     <ImageView -->
+<!--                         android:layout_width="160dp" -->
+<!--                         android:layout_height="260dp" -->
+<!--                         android:src="@drawable/a4" /> -->
+                </LinearLayout>
+                <!-- <ImageView -->
+                <!-- android:layout_width="100dp" -->
+                <!-- android:layout_height="200dp" -->
+                <!-- android:src="@drawable/a1"/> -->
+                <!-- <ImageView -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:src="@drawable/a2"/> -->
+                <!-- <ImageView -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:src="@drawable/a3"/> -->
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/resource_detail_dot_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10.0dip"
+                android:orientation="horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/resource_detail_guess_like"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip" />
+
+            <Button
+                android:id="@+id/resource_detail_btn_report"
+                style="@style/TextView.Font16AndGray"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/btn_gray_bg"
+                android:text="@string/report" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <com.uucun.android.cms.view.ResourceDetailFooter -->
+    <!-- android:id="@+id/resource_detail_footer" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_gravity="bottom" -->
+    <!-- android:gravity="bottom" -->
+    <!-- android:orientation="horizontal" /> -->
+
+    <include
+        android:id="@+id/resource_detail_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/resource_detail_footer"
+        android:gravity="bottom" />
+
+</LinearLayout>

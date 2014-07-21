@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:layout_marginTop="3.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/TextView.Font16AndPressColor"
+            android:layout_width="0.0dip"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray_selector"
+            android:text="@string/delete"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            style="@style/TextView.Font16AndPressColor"
+            android:layout_width="0.0dip"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray_selector"
+            android:text="@string/refresh"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_catalog"
+            style="@style/TextView.Font16AndPressColor"
+            android:layout_width="0.0dip"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray_selector"
+            android:text="@string/catalog"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_select_all"
+            style="@style/TextView.Font16AndPressColor"
+            android:layout_width="0.0dip"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/btn_gray_selector"
+            android:text="@string/select_all"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_install_must_download_with_one_button"
+            style="@style/TextView.Font16AndPressColor"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray_selector"
+            android:text="@string/install_must_download_with_one_button"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- style="@style/Common.App.ListView" -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <com.konka.appdownload.view.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/manage_sdcard_section_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:padding="0dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/no_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="没有找到apk文件"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/item_detail_id"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/Common.App.ListView.Item.Layout"
+            android:layout_width="fill_parent"
+            android:layout_height="70.0dip" >
+
+            <ImageView
+                android:id="@+id/im_app_icon"
+                style="@style/Common.App.ListView.Item.Icon"
+                android:layout_width="52.0dip"
+                android:layout_height="52.0dip"
+                android:contentDescription="@string/imageview_content_description"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:id="@+id/expand_click_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_toLeftOf="@id/adapter_home_res_download_layout"
+                android:layout_toRightOf="@id/im_app_icon"
+                android:fadingEdge="none"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="8.0dip" >
+
+                <TextView
+                    android:id="@+id/txt_app_name"
+                    style="@style/Manage.App.ListView.Item.Title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_app_size"
+                    style="@style/TextView.Font12AndGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:id="@+id/pb_app_progress"
+                    style="@style/ProgressBar_download_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10.0dip"
+                    android:max="100"
+                    android:paddingRight="5.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/adapter_home_res_download_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center" >
+
+                <include layout="@layout/download_state_layout" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/space_id"
+        android:layout_width="fill_parent"
+        android:layout_height="73.0dip"
+        android:layout_below="@id/item_detail_id"
+        android:layout_marginTop="-8.0dip"
+        android:background="@drawable/quickaction_bg"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/tracks"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="4.0dip" >
+
+            <Button
+                android:id="@+id/open_btn_id"
+                style="@style/TextView.Font12AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_gray_selector"
+                android:text="@string/open" />
+
+            <Button
+                android:id="@+id/detail_btn_id"
+                style="@style/TextView.Font10AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_gray_selector"
+                android:text="@string/resource_detail"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/ignore_btn_id"
+                style="@style/TextView.Font12AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_gray_selector"
+                android:text="@string/ignore_long_item" />
+
+            <Button
+                android:id="@+id/uninstall_btn_id"
+                style="@style/TextView.Font12AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_gray_selector"
+                android:text="@string/uninstalled_app" />
+
+            <Button
+                android:id="@+id/tosd_btn_id"
+                style="@style/TextView.Font12AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_gray_selector"
+                android:text="@string/manage_item_expand_tosd" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

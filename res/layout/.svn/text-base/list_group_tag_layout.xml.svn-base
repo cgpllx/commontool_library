@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/section_bar_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="10.0dip" >
+
+    <TextView
+        android:id="@+id/group_list_item_text"
+        style="@style/TextView.Font16AndBlack"
+        android:layout_width="0.0dip"
+        android:layout_height="26.399994dip"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/tag_right_check_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="0.0dip"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/select_all_txt"
+            style="@style/TextView.Font16AndBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/select_all" />
+        <!-- android:button="@drawable/check_box_selector" -->
+        <!-- android:clickable="false" -->
+        <CheckBox
+            android:id="@+id/tag_check_app_checked"
+            style="@style/MyCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:contentDescription="@string/imageview_content_description"
+            android:focusable="false"
+            android:gravity="center"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

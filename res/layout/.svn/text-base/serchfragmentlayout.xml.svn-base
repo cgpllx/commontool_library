@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_grid_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/search_top_layout"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <GridView
+            android:id="@+id/search_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:numColumns="4" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4.7"
+            android:background="@color/white" >
+
+            <Button
+                android:id="@+id/search_gridview_get_more"
+                style="@style/TextView.Font16AndPressColor"
+                android:layout_width="fill_parent"
+                android:layout_height="36.0dip"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/search_get_more_btn_selector"
+                android:text="@string/search_more" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

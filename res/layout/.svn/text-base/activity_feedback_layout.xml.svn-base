@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corner_shade_default_style"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/common_dialog_top_bg" -->
+    <!-- android:background="@drawable/round_corner_shade_default_style" -->
+    <!-- android:background="@drawable/round_corner_shade_default_style" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_round_corner_shade_default_style" >
+
+        <!-- android:background="@drawable/top_round_corner_shade_default_style" -->
+        <!-- android:background="@drawable/common_dialog_top_bg" -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/feedback"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/feedback_remain_char_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10.0dip"
+            android:text="@string/feedback_content" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/feedback_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/rect_corner_shade_default_style"
+        android:gravity="left"
+        android:hint="@string/feedback_hint"
+        android:lines="5"
+        android:padding="5.0dip"
+        android:textSize="13.0sp" />
+
+    <EditText
+        android:id="@+id/feedback_phone_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/rect_corner_shade_default_style"
+        android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@_."
+        android:gravity="center_vertical"
+        android:hint="@string/feedback_phone"
+        android:maxLength="200"
+        android:padding="8.0dip"
+        android:singleLine="true"
+        android:textSize="13.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/feedback_btn_ok"
+            style="@style/TextView.Font14AndPressColor"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray_selector"
+            android:enabled="true"
+            android:text="@string/confirm" />
+
+        <Button
+            android:id="@+id/feedback_btn_cancel"
+            style="@style/TextView.Font14AndPressColor"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray_selector"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>
