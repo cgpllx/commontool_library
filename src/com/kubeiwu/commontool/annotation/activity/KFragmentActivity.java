@@ -1,18 +1,3 @@
-/**
- * Copyright (c) 2012-2013, Michael Yang 杨福海 (www.yangfuhai.com).
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.kubeiwu.commontool.annotation.activity;
 
 import java.lang.reflect.Field;
@@ -70,10 +55,10 @@ public abstract class KFragmentActivity extends FragmentActivity {
 						int viewId = viewInject.id();
 					    field.set(injectedSource,sourceView.findViewById(viewId));
 					
-					    setListener(injectedSource,field,viewInject.click(),Method.Click);
-						setListener(injectedSource,field,viewInject.longClick(),Method.LongClick);
-						setListener(injectedSource,field,viewInject.itemClick(),Method.ItemClick);
-						setListener(injectedSource,field,viewInject.itemLongClick(),Method.itemLongClick);
+					    setListener(injectedSource,field,viewInject.click(), Click);
+						setListener(injectedSource,field,viewInject.longClick(),LongClick);
+						setListener(injectedSource,field,viewInject.itemClick(),ItemClick);
+						setListener(injectedSource,field,viewInject.itemLongClick(),itemLongClick);
 						
 						Select select = viewInject.select();
 						if(!TextUtils.isEmpty(select.selected())){
@@ -97,7 +82,7 @@ public abstract class KFragmentActivity extends FragmentActivity {
 	}
 	
 	
-	private static void setListener(Object injectedSource,Field field,String methodName,Method method)throws Exception{
+	private static void setListener(Object injectedSource,Field field,String methodName,int method)throws Exception{
 		if(methodName == null || methodName.trim().length() == 0)
 			return;
 		
@@ -128,9 +113,7 @@ public abstract class KFragmentActivity extends FragmentActivity {
 				break;
 		}
 	}
-	
-	public enum Method{
-		Click,LongClick,ItemClick,itemLongClick
-	}
+	public static final int Click = 0, LongClick = 1, ItemClick = 2, itemLongClick = 3;
+ 
 	
 }
