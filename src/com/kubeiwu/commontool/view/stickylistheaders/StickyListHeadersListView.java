@@ -21,7 +21,7 @@ import android.widget.ListView;
 import android.widget.SectionIndexer;
 
 import com.kubeiwu.commontool.R;
-import com.kubeiwu.commontool.view.klistview.KListView.IXListViewListener;
+import com.kubeiwu.commontool.view.klistview.KListView.IKListViewListener;
 import com.kubeiwu.commontool.view.stickylistheaders.WrapperViewList.LifeCycleListener;
 
 /**
@@ -808,7 +808,7 @@ public class StickyListHeadersListView extends FrameLayout {
 	//		mList.setPullLoadEnable(enable);
 	//	}
 	//扩展下拉刷新
-	public void setXListViewListener(IXListViewListener l) {
+	public void setXListViewListener(IKListViewListener l) {
 		mList.setXListViewListener(l);
 	}
 

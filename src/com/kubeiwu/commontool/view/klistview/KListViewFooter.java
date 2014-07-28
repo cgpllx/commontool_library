@@ -96,7 +96,7 @@ public class KListViewFooter extends LinearLayout {
 	
 	private void initView(Context context) {
 		mContext = context;
-		LinearLayout moreView = (LinearLayout)LayoutInflater.from(mContext).inflate(R.layout.xlistview_footer, null);
+		LinearLayout moreView = (LinearLayout)LayoutInflater.from(mContext).inflate(R.layout.klistview_footer, null);
 		addView(moreView);
 		moreView.setLayoutParams(new LinearLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT));
 		

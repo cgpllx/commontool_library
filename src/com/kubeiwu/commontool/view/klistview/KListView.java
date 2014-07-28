@@ -33,7 +33,7 @@ public class KListView extends ListView implements OnScrollListener {
 	private OnScrollListener mScrollListener; // user's scroll listener
 
 	// the interface to trigger refresh and load more.
-	private IXListViewListener mListViewListener;
+	private IKListViewListener mListViewListener;
 
 	// -- header view
 	private KListViewHeader mHeaderView;
@@ -365,7 +365,7 @@ public class KListView extends ListView implements OnScrollListener {
 		}
 	}
 
-	public void setXListViewListener(IXListViewListener l) {
+	public void setXListViewListener(IKListViewListener l) {
 		mListViewListener = l;
 	}
 
@@ -380,7 +380,7 @@ public class KListView extends ListView implements OnScrollListener {
 	/**
 	 * implements this interface to get refresh/load more event.
 	 */
-	public interface IXListViewListener {
+	public interface IKListViewListener {
 		public void onRefresh();
 
 		public void onLoadMore();
