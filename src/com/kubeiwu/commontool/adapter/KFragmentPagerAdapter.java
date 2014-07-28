@@ -1,5 +1,6 @@
 package com.kubeiwu.commontool.adapter;
 
+import java.util.HashMap;
 import java.util.List;
 
 import android.support.v4.app.Fragment;
@@ -23,5 +24,5 @@ public class KFragmentPagerAdapter extends FragmentPagerAdapter {
 	public int getCount() {
 		return data.size();
 	}
-
+	
 }

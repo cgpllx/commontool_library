@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.kubeiwu.commontool.R;
 
-public class XListViewHeader extends LinearLayout {
+public class KListViewHeader extends LinearLayout {
 	private LinearLayout mContainer;
 	private ImageView mArrowImageView;
 	private ProgressBar mProgressBar;
@@ -30,7 +30,7 @@ public class XListViewHeader extends LinearLayout {
 	public final static int STATE_READY = 1;
 	public final static int STATE_REFRESHING = 2;
 
-	public XListViewHeader(Context context) {
+	public KListViewHeader(Context context) {
 		super(context);
 		initView(context);
 	}
@@ -39,7 +39,7 @@ public class XListViewHeader extends LinearLayout {
 	 * @param context
 	 * @param attrs
 	 */
-	public XListViewHeader(Context context, AttributeSet attrs) {
+	public KListViewHeader(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		initView(context);
 	}

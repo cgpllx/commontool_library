@@ -4,7 +4,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.kubeiwu.commontool.view.xlistview.XListView;
+import com.kubeiwu.commontool.view.xlistview.KListView;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ListView;
 
-class WrapperViewList extends XListView {
+class WrapperViewList extends KListView {
 
 	interface LifeCycleListener {
 		void onDispatchDrawOccurred(Canvas canvas);

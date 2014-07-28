@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.kubeiwu.commontool.R;
 
-public class XListViewFooter extends LinearLayout {
+public class KListViewFooter extends LinearLayout {
 	public final static int STATE_NORMAL = 0;
 	public final static int STATE_READY = 1;
 	public final static int STATE_LOADING = 2;
@@ -20,12 +20,12 @@ public class XListViewFooter extends LinearLayout {
 	private View mProgressBar;
 	private TextView mHintView;
 	
-	public XListViewFooter(Context context) {
+	public KListViewFooter(Context context) {
 		super(context);
 		initView(context);  
 	}
 	
-	public XListViewFooter(Context context, AttributeSet attrs) {
+	public KListViewFooter(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		initView(context);
 	}

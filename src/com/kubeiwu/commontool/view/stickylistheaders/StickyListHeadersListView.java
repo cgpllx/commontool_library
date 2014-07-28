@@ -22,7 +22,7 @@ import android.widget.SectionIndexer;
 
 import com.kubeiwu.commontool.R;
 import com.kubeiwu.commontool.view.stickylistheaders.WrapperViewList.LifeCycleListener;
-import com.kubeiwu.commontool.view.xlistview.XListView.IXListViewListener;
+import com.kubeiwu.commontool.view.xlistview.KListView.IXListViewListener;
 
 /**
  * Even though this is a FrameLayout subclass we it is called a ListView. This
